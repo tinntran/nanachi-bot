@@ -1,0 +1,21 @@
+{
+  "name": "na",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "register-cmd": "ts-node src/register-cmd.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "rule34js": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
