@@ -1,9 +1,11 @@
 {
   "name": "na",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node .",
+    "build": "npx",
     "dev": "nodemon src/index.ts",
     "register-cmd": "ts-node src/register-cmd.ts"
   },
