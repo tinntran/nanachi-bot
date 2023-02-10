@@ -27,7 +27,7 @@ client.on('interactionCreate', async i => {
 
     case 'r34':
       const tag = i.options.get('tag')
-      const limit = 100
+      const limit = 20
 
       if (tag?.value) {
         const image: any = await fetch(
