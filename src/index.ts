@@ -1,5 +1,6 @@
 import discord from 'discord.js'
 import dotenv from 'dotenv'
+import server from './server'
 
 dotenv.config()
 
@@ -53,4 +54,5 @@ client.on('interactionCreate', async i => {
   }
 })
 
+server()
 client.login(process.env.TOKEN)

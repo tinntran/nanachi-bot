@@ -10,9 +10,11 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "rule34js": "^2.2.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/node": "^18.13.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
