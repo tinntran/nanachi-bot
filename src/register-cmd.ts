@@ -16,6 +16,11 @@ const commands = [
         name: 'tag',
         description: 'What\'s the sauce?',
         type: ApplicationCommandOptionType.String,
+      },
+      {
+        name: 'bomb',
+        description: 'Send immediatly 5 images',
+        type: ApplicationCommandOptionType.Boolean
       }
     ]
   }

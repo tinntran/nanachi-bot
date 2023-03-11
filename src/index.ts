@@ -1,5 +1,6 @@
 import discord from 'discord.js'
 import dotenv from 'dotenv'
+import r34 from './cmds/r34'
 import server from './server'
 
 dotenv.config()
@@ -26,27 +27,7 @@ client.on('interactionCreate', async i => {
       break
 
     case 'r34':
-      const tag = i.options.get('tag')
-      const limit = 20
-
-      if (tag?.value) {
-        const image: any = await fetch(
-          `https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&tags=${tag.value}&limit=${limit}&json=1`
-        )
-          .then(res => res.json())
-          .then(data => data[Math.round(Math.random() * limit)].file_url)
-
-        await i.reply(image)
-      } else {
-        const image: any = await fetch(
-          `https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&limit=${limit}&json=1`
-        )
-          .then(res => res.json())
-          .then(data => data[Math.round(Math.random() * limit)].file_url)
-
-        await i.reply(image)
-      }
-
+      await r34(i)
       break
 
     default:
