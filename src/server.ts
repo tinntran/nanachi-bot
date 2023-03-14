@@ -7,7 +7,7 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT
 
-app.use(express.static(path.join(__dirname, '/public')))
+app.use(express.static(path.join(__dirname, '../public')))
 
 app.all('/', (_, res) => {
   res.sendFile(path.join(__dirname + '/public/index.html'))

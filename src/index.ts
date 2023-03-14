@@ -15,7 +15,7 @@ client.on('messageCreate', msg => {
   if (msg.author.bot) return
 
   if (msg.content.toLowerCase().includes('riko'))
-    msg.channel.send('https://media.giphy.com/media/gmeZw6BWediao155A0/giphy.gif')
+    msg.channel.send(`${process.env.DEV && 'DEV\n'}https://media.giphy.com/media/gmeZw6BWediao155A0/giphy.gif`)
 })
 
 client.on('interactionCreate', async i => {
@@ -23,7 +23,7 @@ client.on('interactionCreate', async i => {
 
   switch (i.commandName) {
     case 'riko':
-      await i.reply('https://media.giphy.com/media/gmeZw6BWediao155A0/giphy.gif')
+      await i.reply(`${process.env.DEV && 'DEV\n'}https://media.giphy.com/media/gmeZw6BWediao155A0/giphy.gif`)
       break
 
     case 'r34':
