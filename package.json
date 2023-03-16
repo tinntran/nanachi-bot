@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "build": "npx && yarn register-cmd",
+    "build": "npx tsc && yarn register-cmd",
     "ts": "tsc --watch",
     "dev": "nodemon .",
     "dev-ts": "concurrently \"yarn ts\" \"yarn dev\"",
