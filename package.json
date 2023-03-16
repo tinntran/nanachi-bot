@@ -5,8 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "build": "npx",
-    "dev": "concurrently \"tsc --watch\" \"nodemon .\"",
+    "build": "npx && yarn register-cmd",
+    "ts": "tsc --watch",
+    "dev": "nodemon .",
+    "dev-ts": "concurrently \"yarn ts\" \"yarn dev\"",
     "register-cmd": "ts-node src/register-cmd.ts"
   },
   "dependencies": {
@@ -20,6 +22,7 @@
     "@types/node": "^18.13.0",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "engines": {

@@ -6,7 +6,11 @@ dotenv.config()
 const commands = [
   {
     name: 'riko',
-    description: 'A dancing Riko GIF!',
+    description: 'A dancing Riko GIF 💃',
+  },
+  {
+    name: 'help',
+    description: 'Help me I\'m stuck 🤯',
   },
   {
     name: 'r34',
